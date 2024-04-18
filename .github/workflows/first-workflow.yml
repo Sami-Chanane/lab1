@@ -3,9 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - master
-    paths-ignore:
-    - .github/workflows/first-workflow.yml
+    - dev-1
+    paths:
     - index.html
 jobs:
   my-only-job:
