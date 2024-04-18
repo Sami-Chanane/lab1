@@ -1,0 +1,16 @@
+name: first workflow
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - dev-1
+    paths:
+    - index.html
+jobs:
+  my-only-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: The Only step
+      run: |
+        echo "The workflow has been triggered successfully"
+        echo "move on to the next task"
